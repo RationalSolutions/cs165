@@ -12,6 +12,11 @@
 using namespace std;
 
 // TODO: Define your Complex struct here
+struct Complex
+{
+   double real;
+   double imaginary;
+};
 
 
 // TODO: Add your prompt function here

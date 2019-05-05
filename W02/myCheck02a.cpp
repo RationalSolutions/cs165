@@ -13,15 +13,17 @@ using namespace std;
 
 struct Student
 {
-   String firstName;
-   String lastName;
+   string firstName;
+   string lastName;
    int studentId;
 };
 
 void displayStudent(Student user)
 {
-   cout << user.studentId << "# - " << user.firstName << " " << user.lastName;
-   cout << endl;
+   cout << "Your information:\n";
+   cout << user.studentId << " - " << user.firstName << " " << user.lastName
+   << "\n";
+
 }
 
 /**********************************************************************
@@ -30,5 +32,17 @@ void displayStudent(Student user)
  ***********************************************************************/
 int main()
 {
+   Student user;
+
+   cout << "Please enter your first name: ";
+   cin >> user.firstName;
+   cout << "Please enter your last name: ";
+   cin >> user.lastName;
+   cout << "Please enter your id number: ";
+   cin >> user.studentId;
+   cout << endl;
+
+   displayStudent(user);
+
    return 0;
 }
