@@ -82,7 +82,7 @@ void fileSearch (Query &q, AccessRecord record[MAX_RESULTS])
 {
    q.resultCount = 0;
 
-   for (int i = 0; i < x.fileLength; ++i)
+   for (int i = 0; i < q.fileLength; ++i)
    {
       if (q.startTime <= record[i].timeStamp &&
           q.endTime >= record[i].timeStamp)
