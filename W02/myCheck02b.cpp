@@ -68,7 +68,6 @@ int main()
    
    cout << "\nThe sum is: ";
    display(sum);
-   cout << endl;
  
    return 0;
 }
