@@ -1,9 +1,9 @@
 /***********************************************************************
 * Program:
-*    Checkpoint ###, ????          (e.g. Checkpoint 01a, review)  
-*    Brother {Burton, Falin, Ercanbrack, Comeau}, CS165
+*    Checkpoint 03a, Exceptions
+*    Brother Alvey, CS165
 * Author:
-*    your name
+*    Coby Jenkins
 * Summary: 
 *    Summaries are not necessary for checkpoint assignments.
 * ***********************************************************************/

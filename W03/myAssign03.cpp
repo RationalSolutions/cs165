@@ -1,9 +1,9 @@
 /***********************************************************************
 * Program:
 *    Assignment ##, ????          (e.g. Assignment 01, Hello World)  
-*    Brother {Burton, Helfrich, Comeau}, CS165
+*    Brother Alvey, CS165
 * Author:
-*    your name
+*    Coby Jenkins
 * Summary: 
 *    Enter a brief description of your program here!  Please note that if
 *    you do not take the time to fill out this block, YOU WILL LOSE POINTS.
