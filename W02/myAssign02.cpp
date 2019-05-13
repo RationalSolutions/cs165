@@ -39,6 +39,9 @@ struct Query
    int resultCount;
 };
 
+/**********************************************************************
+ * gets file name
+ ***********************************************************************/
 void getFile (Query &q)
 {
    cout << "Enter the access record file: ";
@@ -47,6 +50,9 @@ void getFile (Query &q)
 
 }
 
+/**********************************************************************
+ * gets time frames for searching
+ ***********************************************************************/
 void getTime (Query &q)
 {
    cout << "Enter the start time: ";
@@ -56,9 +62,12 @@ void getTime (Query &q)
 
 }
 
+/**********************************************************************
+ * populates records array
+ ***********************************************************************/
 void readFile (Query &q, AccessRecord record[MAX_RESULTS])
 {
-   int q.fileLength = 0;
+   q.fileLength = 0;
 
    ifstream fin (q.accessRecord);
 
@@ -78,6 +87,9 @@ void readFile (Query &q, AccessRecord record[MAX_RESULTS])
    fin.close ();
 }
 
+/**********************************************************************
+ * searches records array for results within time frame
+ ***********************************************************************/
 void fileSearch (Query &q, AccessRecord record[MAX_RESULTS])
 {
    q.resultCount = 0;
@@ -94,6 +106,9 @@ void fileSearch (Query &q, AccessRecord record[MAX_RESULTS])
    }
 }
 
+/**********************************************************************
+ * displays results
+ ***********************************************************************/
 void display (Query &q, AccessRecord record[MAX_RESULTS])
 {
    cout << endl;
@@ -114,19 +129,18 @@ void display (Query &q, AccessRecord record[MAX_RESULTS])
 }
 
 /**********************************************************************
- * Add text here to describe what the function "main" does. Also don't forget
- * to fill this out with meaningful text or YOU WILL LOSE POINTS.
+ * entry point for application
  ***********************************************************************/
 int main ()
 {
    Query q;
    AccessRecord record[MAX_RESULTS];
 
-   filePrompt (q);
-   timePrompt (q);
+   getFile (q);
+   getTime (q);
    readFile (q, record);
    fileSearch (q, record);
-   displayResults (q, record);
+   display (q, record);
 
    return 0;
 }
