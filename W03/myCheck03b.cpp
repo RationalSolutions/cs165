@@ -1,6 +1,6 @@
 /***********************************************************************
 * Program:
-*    Checkpoint ###, ????          (e.g. Checkpoint 01a, review)  
+*    Checkpoint 03b, Errors
 *    Brother Alvey, CS165
 * Author:
 *    Coby Jenkins
@@ -9,7 +9,30 @@
 * ***********************************************************************/
 
 #include <iostream>
+
 using namespace std;
+
+int prompt()
+{
+   int num;
+
+   do
+   {
+      cout << "Enter a number: ";
+      cin >> num;
+
+      if (cin.fail())
+      {
+         cout << "Invalid input." << endl;
+         cin.clear();
+         cin.ignore(256, '\n');
+      }
+
+   }
+   while (!num);
+
+   return num;
+}
 
 /**********************************************************************
  * Function: main
@@ -17,5 +40,8 @@ using namespace std;
  ***********************************************************************/
 int main()
 {
+   int num = prompt();
+   cout << "The number is " << num << "." << endl;
+
    return 0;
 }
