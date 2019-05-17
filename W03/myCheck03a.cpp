@@ -11,7 +11,7 @@
 #include <iostream>
 using namespace std;
 
-int prompt() throw (const string *)
+int prompt() throw (const char *)
 {
    int num;
 
@@ -19,15 +19,15 @@ int prompt() throw (const string *)
    cin >> num;
    if (num < 0)
    {
-      throw string("negative.");
+      throw "negative.";
    }
    if (num > 100)
    {
-      throw string("greater than 100.");
+      throw "greater than 100.";
    }
    if (num % 2)
    {
-      throw string("odd.");
+      throw "odd.";
    }
    return num;
 }
@@ -43,7 +43,7 @@ int main()
       int num = prompt();
       cout << "The number is " << num << "." << endl;
    }
-   catch (const string * error)
+   catch (const char * error)
    {
       cout << "Error: The number cannot be " << error << endl;
    }
