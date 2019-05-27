@@ -15,14 +15,14 @@ int main()
    int year;
 
    cout << "Month: ";
-   cin >> monthInt;
+   cin >> month;
    cout << "Day: ";
    cin >> day;
    cout << "Year: ";
    cin >> year;
+   cout << endl;
 
    Date date;
-
    date.set(month, day, year);
 
    date.displayAmerican();
