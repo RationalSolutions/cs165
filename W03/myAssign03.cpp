@@ -1,24 +1,23 @@
 /***********************************************************************
 * Program:
-*    Assignment ##, ????          (e.g. Assignment 01, Hello World)  
+*    Assignment 03, Digital Forensics
 *    Brother Alvey, CS165
 * Author:
 *    Coby Jenkins
 * Summary: 
-*    Enter a brief description of your program here!  Please note that if
-*    you do not take the time to fill out this block, YOU WILL LOSE POINTS.
-*    Before you begin working, estimate the time you think it will
-*    take you to do the assignment and include it in this header block.
-*    Before you submit the assignment include the actual time it took.
+*    E Write a program to scan through a log to identify users who accessed
+ *    files in a particular window of time
 *
-*    Estimated:  0.0 hrs   
-*    Actual:     0.0 hrs
-*      Please describe briefly what was the most difficult part.
+*    Estimated:  4.0 hrs
+*    Actual:     8.0 hrs
+*      figuring out how to split the read file method appropriately to meet
+ *      the requirements.
 ************************************************************************/
 
 #include <iostream>
 #include <iomanip>
 #include <fstream>
+#include <string>
 #include <sstream>
 
 using namespace std;
@@ -28,13 +27,15 @@ const long int MAX_TIMESTAMP = 10000000000;
 const long int MIN_TIMESTAMP = 1000000000;
 const int MAX_RESULTS = 500;
 
-struct AccessRecord {
+struct AccessRecord
+{
    long int timeStamp;
    char fileName[MAX_BUFFER];
    char user[MAX_BUFFER];
 };
 
-struct Query {
+struct Query
+{
    long int startTime;
    long int endTime;
    char accessRecord[MAX_BUFFER];
@@ -44,18 +45,21 @@ struct Query {
 };
 
 /**********************************************************************
-gets file name
+* gets file name
 ***********************************************************************/
-void getFile(Query &q) {
+void getFile(Query &q)
+{
    cout << "Enter the access record file: ";
    cin >> q.accessRecord;
+
 
 }
 
 /**********************************************************************
-gets time frames for searching
+* gets time frames for searching
 ***********************************************************************/
-void getTime(Query &q) {
+void getTime(Query &q)
+{
    cout << "Enter the start time: ";
    cin >> q.startTime;
    cout << "Enter the end time: ";
@@ -64,49 +68,59 @@ void getTime(Query &q) {
 }
 
 /**********************************************************************
-parses file lines
+* parses file lines
 ***********************************************************************/
-void parseLine(Query &q, AccessRecord record[MAX_RESULTS], string line) {
+void parseLine(Query &q, AccessRecord record[MAX_RESULTS], string line)
+{
 
-   stringstream ss(line);
+   stringstream ss;
+   ss.str(line);
 
-   while (!ss.eof()) {
-      ss >> record[q.fileLength].fileName;
-      ss >> record[q.fileLength].user;
-      ss >> record[q.fileLength].timeStamp;
+   ss >> record[q.fileLength].fileName;
+   if (ss.fail())
+      throw string("no filename on line");
 
-      if (record[q.fileLength].timeStamp > MAX_TIMESTAMP |
-          record[q.fileLength].timeStamp < MIN_TIMESTAMP) {
-         cout << "Error parsing line: " << record[q.fileLength].fileName << " "
-              << record[q.fileLength].user << " "
-              << record[q.fileLength].timeStamp << endl;
-      }
+   ss >> record[q.fileLength].user;
+   if (ss.fail())
+      throw string("no username on line");
 
-      if (ss.fail()) {
-         cout << "Error parsing line: " << record[q.fileLength].fileName << " "
-              << record[q.fileLength].user << " "
-              << record[q.fileLength].timeStamp << endl;
-      }
-   }
+   ss >> record[q.fileLength].timeStamp;
+   if (ss.fail())
+      throw string("Timestamp is invalid/not found");
+   if (record[q.fileLength].timeStamp < MIN_TIMESTAMP)
+      throw string("Timestamp is not long enough");
+   if (record[q.fileLength].timeStamp > MAX_TIMESTAMP)
+      throw string("Timestamp is too long");
+
 }
 
 /**********************************************************************
-Reads file provides by user
+* Reads file provides by user
 ***********************************************************************/
-void parseFile(Query &q, AccessRecord record[MAX_RESULTS]) {
+void parseFile(Query &q, AccessRecord record[MAX_RESULTS]) throw(string)
+{
    q.fileLength = 0;
+   string lineToBeParsed;
 
    ifstream fin(q.accessRecord);
 
-   if (fin.fail()) {
+   if (fin.fail())
+   {
       cout << "Unable to open: " << q.accessRecord << endl;
    }
 
-   while (!fin.eof()) {
-      string lineToBeParsed;
-      getline(fin, lineToBeParsed);
-      parseLine(q, record, lineToBeParsed);
-      q.fileLength++;
+   while (getline(fin, lineToBeParsed))
+   {
+      try
+      {
+         parseLine(q, record, lineToBeParsed);
+         q.fileLength++;
+      }
+      catch (string err)
+      {
+         cout << "Error parsing line: " << lineToBeParsed << endl;
+      }
+
    }
    fin.close();
    return;
@@ -115,12 +129,15 @@ void parseFile(Query &q, AccessRecord record[MAX_RESULTS]) {
 /**********************************************************************
  * searches records array for results within time frame
  ***********************************************************************/
-void fileSearch(Query &q, AccessRecord record[MAX_RESULTS]) {
+void fileSearch(Query &q, AccessRecord record[MAX_RESULTS])
+{
    q.resultCount = 0;
 
-   for (int i = 0; i < q.fileLength; ++i) {
+   for (int i = 0; i < q.fileLength; ++i)
+   {
       if (q.startTime <= record[i].timeStamp &&
-          q.endTime >= record[i].timeStamp) {
+          q.endTime >= record[i].timeStamp)
+      {
          q.results[q.resultCount] = i;
          q.resultCount++;
       }
@@ -131,7 +148,8 @@ void fileSearch(Query &q, AccessRecord record[MAX_RESULTS]) {
 /**********************************************************************
  * displays results
  ***********************************************************************/
-void display(Query &q, AccessRecord record[MAX_RESULTS]) {
+void display(Query &q, AccessRecord record[MAX_RESULTS])
+{
    cout << endl;
    cout << "The following records match your criteria:" << endl;
    cout << endl;
@@ -139,7 +157,8 @@ void display(Query &q, AccessRecord record[MAX_RESULTS]) {
         << "User" << endl;
    cout << "--------------- ------------------- -------------------" << endl;
 
-   for (int i = 0; i < q.resultCount; ++i) {
+   for (int i = 0; i < q.resultCount; ++i)
+   {
       cout << setw(15) << record[q.results[i]].timeStamp << setw(20)
            << record[q.results[i]].fileName << setw(20)
            << record[q.results[i]].user << endl;
@@ -151,12 +170,14 @@ void display(Query &q, AccessRecord record[MAX_RESULTS]) {
 /**********************************************************************
  * entry point for application
  ***********************************************************************/
-int main() {
+int main()
+{
    Query q;
    AccessRecord record[MAX_RESULTS];
 
    getFile(q);
    parseFile(q, record);
+   cout << endl;
 
    getTime(q);
    fileSearch(q, record);
