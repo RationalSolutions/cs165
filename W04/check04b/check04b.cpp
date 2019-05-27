@@ -10,14 +10,24 @@ using namespace std;
 
 int main()
 {
-   // prompt for month, day, year
-   
-   // create a Date object
-   
-   // set its values
-   
-   // call each display function
+   int month;
+   int day;
+   int year;
 
+   cout << "Month: ";
+   cin >> monthInt;
+   cout << "Day: ";
+   cin >> day;
+   cout << "Year: ";
+   cin >> year;
+
+   Date date;
+
+   date.set(month, day, year);
+
+   date.displayAmerican();
+   date.displayEuropean();
+   date.displayISO();
 
    return 0;
 }

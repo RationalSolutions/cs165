@@ -1,9 +1,9 @@
 ###############################################################
 # Program:
 #     Checkpoint 04b, Classes
-#     Brother {Burton, Falin, Ercanbrack}, CS165
+#     Brother Alvey, CS165
 # Author:
-#     your name here
+#     Coby Jenkins
 # Summary:
 #     Summaries are not necessary for checkpoint assignments.
 ###############################################################
