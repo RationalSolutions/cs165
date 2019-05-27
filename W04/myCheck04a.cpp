@@ -1,6 +1,6 @@
 /***********************************************************************
 * Program:
-*    Checkpoint 04a, Exceptions
+*    Checkpoint 04a, Classes
 *    Brother Alvey, CS165
 * Author:
 *    Coby Jenkins
