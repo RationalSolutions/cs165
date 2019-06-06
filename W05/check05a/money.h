@@ -4,6 +4,8 @@
 #ifndef MONEY_H
 #define MONEY_H
 
+#include <cstdlib>
+
 class Money
 {
 private:
