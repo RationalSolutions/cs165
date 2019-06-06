@@ -5,6 +5,7 @@
 #define MONEY_H
 
 #include <cstdlib>
+using namespace std;
 
 class Money
 {
