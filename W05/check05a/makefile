@@ -1,9 +1,9 @@
 ###############################################################
 # Program:
-#     Checkpoint 05a, Getters and Setters
-#     Brother {Burton, Falin, Ercanbrack}, CS165
+#     Checkpoint 04b, Classes
+#     Brother Alvey, CS165
 # Author:
-#     your name here
+#     Coby Jenkins
 # Summary:
 #     Summaries are not necessary for checkpoint assignments.
 ###############################################################
