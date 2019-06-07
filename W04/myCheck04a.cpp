@@ -25,15 +25,15 @@ private:
 
 public:
 
-   void prompt()
+   void prompt ()
    {
       cout << "Title: ";
-      getline(cin, title);
+      getline (cin, title);
       cout << "Author: ";
-      getline(cin, author);
+      getline (cin, author);
    }
 
-   void display()
+   void display ()
    {
       cout << "\"" + title + "\" by " + author << endl;
    }
@@ -43,12 +43,12 @@ public:
  * Function: main
  * Purpose: This is the entry point and driver for the program.
  ***********************************************************************/
-int main()
+int main ()
 {
    Book book;
 
-   book.prompt();
-   book.display();
+   book.prompt ();
+   book.display ();
 
    return 0;
 }

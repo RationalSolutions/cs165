@@ -9,9 +9,10 @@
 * ***********************************************************************/
 
 #include <iostream>
+
 using namespace std;
 
-int prompt() throw (const char *)
+int prompt () throw (const char *)
 {
    int num;
 
@@ -36,14 +37,13 @@ int prompt() throw (const char *)
  * Function: main
  * Purpose: This is the entry point and driver for the program.
  ***********************************************************************/
-int main()
+int main ()
 {
    try
    {
-      int num = prompt();
+      int num = prompt ();
       cout << "The number is " << num << "." << endl;
-   }
-   catch (const char * error)
+   } catch (const char *error)
    {
       cout << "Error: The number cannot be " << error << endl;
    }

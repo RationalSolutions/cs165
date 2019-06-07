@@ -14,15 +14,15 @@ class Product
 {
 public:
 
-   void prompt();
+   void prompt ();
 
-   float getTotalPrice();
+   float getTotalPrice ();
 
-   void displayAdvertisingProfile();
+   void displayAdvertisingProfile ();
 
-   void displayInventoryLineItem();
+   void displayInventoryLineItem ();
 
-   void displayReceipt();
+   void displayReceipt ();
 
 private:
    string name;
@@ -32,11 +32,11 @@ private:
    double shipCost;
    double salesTax;
 
-   void formatReceiptLine(string name, float amount);
+   void formatReceiptLine (string name, float amount);
 
-   float getSalesTax();
+   float getSalesTax ();
 
-   float getShippingCost();
+   float getShippingCost ();
 
 };
 

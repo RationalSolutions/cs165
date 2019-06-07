@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a01672b-b737-42ad-9917-ea0d91c87ae6" name="Default Changelist" comment="03 Prepare : Checkpoint A - Exceptions">
+      <change beforePath="$PROJECT_DIR$/W01/myCheck01a.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W01/myCheck01a.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W01/myCheck01b.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W01/myCheck01b.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W02/myCheck02b.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W02/myCheck02b.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W03/myAssign03.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W03/myAssign03.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W03/myCheck03a.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W03/myCheck03a.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W03/myCheck03b.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W03/myCheck03b.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W04/assign04/assign04.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W04/assign04/assign04.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W04/assign04/product.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W04/assign04/product.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W04/assign04/product.h" beforeDir="false" afterPath="$PROJECT_DIR$/W04/assign04/product.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W04/check04b/check04b.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W04/check04b/check04b.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W04/check04b/date.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W04/check04b/date.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W04/check04b/date.h" beforeDir="false" afterPath="$PROJECT_DIR$/W04/check04b/date.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W04/myCheck04a.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W04/myCheck04a.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W05/assign05/address.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W05/assign05/address.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W05/assign05/address.h" beforeDir="false" afterPath="$PROJECT_DIR$/W05/assign05/address.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W05/assign05/customer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W05/assign05/customer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W05/assign05/customer.h" beforeDir="false" afterPath="$PROJECT_DIR$/W05/assign05/customer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W05/assign05/order.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W05/assign05/order.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W05/assign05/order.h" beforeDir="false" afterPath="$PROJECT_DIR$/W05/assign05/order.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W05/assign05/product.h" beforeDir="false" afterPath="$PROJECT_DIR$/W05/assign05/product.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W05/check05a/check05a.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W05/check05a/check05a.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W05/check05a/money.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W05/check05a/money.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W05/check05a/money.h" beforeDir="false" afterPath="$PROJECT_DIR$/W05/check05a/money.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W05/check05b/check05b.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W05/check05b/check05b.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W05/check05b/money.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/W05/check05b/money.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/W05/check05b/money.h" beforeDir="false" afterPath="$PROJECT_DIR$/W05/check05b/money.h" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/W05/assign05/product.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#248#268#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/W05/assign05/product.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/myAssign01.cpp" />
+        <option value="$PROJECT_DIR$/W02/myAssign02.cpp" />
+        <option value="$PROJECT_DIR$/W03/myAssign03.cpp" />
+        <option value="$PROJECT_DIR$/W05/check05a/check05a.cpp" />
+        <option value="$PROJECT_DIR$/W05/check05a/money.cpp" />
+        <option value="$PROJECT_DIR$/W05/check05a/money.h" />
+        <option value="$PROJECT_DIR$/W05/check05b/check05b.cpp" />
+        <option value="$PROJECT_DIR$/W05/check05b/money.cpp" />
+        <option value="$PROJECT_DIR$/W05/check05b/money.h" />
+        <option value="$PROJECT_DIR$/W01/myCheck01a.cpp" />
+        <option value="$PROJECT_DIR$/W01/myCheck01b.cpp" />
+        <option value="$PROJECT_DIR$/W02/myCheck02b.cpp" />
+        <option value="$PROJECT_DIR$/W03/myCheck03a.cpp" />
+        <option value="$PROJECT_DIR$/W03/myCheck03b.cpp" />
+        <option value="$PROJECT_DIR$/W04/assign04/assign04.cpp" />
+        <option value="$PROJECT_DIR$/W04/assign04/product.cpp" />
+        <option value="$PROJECT_DIR$/W04/assign04/product.h" />
+        <option value="$PROJECT_DIR$/W04/check04b/check04b.cpp" />
+        <option value="$PROJECT_DIR$/W04/check04b/date.cpp" />
+        <option value="$PROJECT_DIR$/W04/check04b/date.h" />
+        <option value="$PROJECT_DIR$/W04/myCheck04a.cpp" />
+        <option value="$PROJECT_DIR$/W05/assign05/customer.cpp" />
+        <option value="$PROJECT_DIR$/W05/assign05/address.cpp" />
+        <option value="$PROJECT_DIR$/W05/assign05/customer.h" />
+        <option value="$PROJECT_DIR$/W05/assign05/address.h" />
+        <option value="$PROJECT_DIR$/W05/assign05/order.h" />
+        <option value="$PROJECT_DIR$/W05/assign05/order.cpp" />
+        <option value="$PROJECT_DIR$/W05/assign05/product.h" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="1440" />
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cs165" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cs165" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs165" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cs165" type="462c0819:PsiDirectoryNode" />
+              <item name="W01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs165" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cs165" type="462c0819:PsiDirectoryNode" />
+              <item name="W02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs165" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cs165" type="462c0819:PsiDirectoryNode" />
+              <item name="W03" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs165" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cs165" type="462c0819:PsiDirectoryNode" />
+              <item name="W04" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs165" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cs165" type="462c0819:PsiDirectoryNode" />
+              <item name="W04" type="462c0819:PsiDirectoryNode" />
+              <item name="assign04" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs165" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cs165" type="462c0819:PsiDirectoryNode" />
+              <item name="W04" type="462c0819:PsiDirectoryNode" />
+              <item name="check04b" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs165" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cs165" type="462c0819:PsiDirectoryNode" />
+              <item name="W05" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs165" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cs165" type="462c0819:PsiDirectoryNode" />
+              <item name="W05" type="462c0819:PsiDirectoryNode" />
+              <item name="assign05" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cs165" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cs165" type="462c0819:PsiDirectoryNode" />
+              <item name="W05" type="462c0819:PsiDirectoryNode" />
+              <item name="check05b" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a01672b-b737-42ad-9917-ea0d91c87ae6" name="Default Changelist" comment="" />
+      <created>1556742375034</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556742375034</updated>
+      <workItem from="1556742376223" duration="657000" />
+      <workItem from="1556995640002" duration="7064000" />
+      <workItem from="1557167307946" duration="4847000" />
+      <workItem from="1557778184043" duration="9000" />
+      <workItem from="1557780677582" duration="1734000" />
+      <workItem from="1557894051323" duration="438000" />
+      <workItem from="1558540623281" duration="186000" />
+      <workItem from="1559579124396" duration="355000" />
+      <workItem from="1559928305551" duration="6104000" />
+    </task>
+    <task id="LOCAL-00001" summary="first draft">
+      <created>1557015420256</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1557015420256</updated>
+    </task>
+    <task id="LOCAL-00002" summary="02 Prepare : Checkpoint B - Complex Numbers">
+      <created>1557099019327</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557099019327</updated>
+    </task>
+    <task id="LOCAL-00003" summary="02 Prove : Assignment - Digital Forensics">
+      <created>1557181238384</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1557181238384</updated>
+    </task>
+    <task id="LOCAL-00004" summary="02 Prove : Assignment - Digital Forensics">
+      <created>1557181282591</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1557181282591</updated>
+    </task>
+    <task id="LOCAL-00005" summary="03 Prepare : Checkpoint A - Exceptions">
+      <created>1557781924971</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557781924972</updated>
+    </task>
+    <task id="LOCAL-00006" summary="03 Prepare : Checkpoint A - Exceptions">
+      <created>1557782057354</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1557782057354</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="21394000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2568" y="0" width="1432" height="1440" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14748201" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.19927007" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first draft" />
+    <MESSAGE value="02 Prepare : Checkpoint B - Complex Numbers" />
+    <MESSAGE value="02 Prove : Assignment - Digital Forensics" />
+    <MESSAGE value="03 Prepare : Checkpoint A - Exceptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="03 Prepare : Checkpoint A - Exceptions" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/myAssign01.h" />
+    <entry file="file://$PROJECT_DIR$/myAssign01.cpp" />
+    <entry file="file://$PROJECT_DIR$/W03/myAssign03.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/check05a/check05a.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/check05a/money.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/check05a/money.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/check05b/check05b.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/check05b/money.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/check05b/money.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/check05b/makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W01/myAssign01.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="3" selection-start-column="5" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W01/myCheck01a.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W01/myCheck01b.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W02/myAssign02.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="93" column="1" selection-start-line="93" selection-start-column="1" selection-end-line="93" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W02/myCheck02a.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="3" selection-start-column="5" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W02/myCheck02b.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W03/myCheck03a.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W03/myCheck03b.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W04/assign04/assign04.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W04/assign04/makefile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W04/assign04/product.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W04/assign04/product.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W04/check04b/date.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W04/check04b/date.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W04/check04b/makefile">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W04/myCheck04a.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W04/check04b/check04b.cpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/assign05/customer.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <element signature="e#23#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/assign05/address.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="e#22#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/assign05/address.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="63" column="14" lean-forward="true" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/assign05/customer.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="3" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/assign05/order.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="67" selection-start-line="17" selection-start-column="67" selection-end-line="17" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/assign05/order.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#51#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/assign05/product.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#248#268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/W05/assign05/product.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

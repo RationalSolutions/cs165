@@ -12,7 +12,7 @@ using namespace std;
 * Method: Set
 * Purpose: Sets the day month and year private member variables
 ***********************************************************************/
-void Date::set(int month, int day, int year)
+void Date::set (int month, int day, int year)
 {
    this->month = month;
    this->day = day;
@@ -23,7 +23,7 @@ void Date::set(int month, int day, int year)
 * Method: Display American
 * Purpose: displays the date in the format mm/dd/yyyy
 ***********************************************************************/
-void Date::displayAmerican()
+void Date::displayAmerican ()
 {
    cout << month << "/" << day << "/" << year << endl;
 }
@@ -32,7 +32,7 @@ void Date::displayAmerican()
 * Method: Display European
 * Purpose: displays the date in the format dd/mm/yyyy
 ***********************************************************************/
-void Date::displayEuropean()
+void Date::displayEuropean ()
 {
    cout << day << "/" << month << "/" << year << endl;
 }
@@ -41,7 +41,7 @@ void Date::displayEuropean()
 * Method: Display ISO
 * Purpose: displays the date in the format yyyy-mm-dd
 ***********************************************************************/
-void Date::displayISO()
+void Date::displayISO ()
 {
    cout << year << "-" << month << "-" << day << endl;
 }

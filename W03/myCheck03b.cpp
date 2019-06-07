@@ -12,7 +12,7 @@
 
 using namespace std;
 
-int prompt()
+int prompt ()
 {
    int num;
 
@@ -21,15 +21,14 @@ int prompt()
       cout << "Enter a number: ";
       cin >> num;
 
-      if (cin.fail())
+      if (cin.fail ())
       {
          cout << "Invalid input." << endl;
-         cin.clear();
-         cin.ignore(256, '\n');
+         cin.clear ();
+         cin.ignore (256, '\n');
       }
 
-   }
-   while (!num);
+   } while (!num);
 
    return num;
 }
@@ -38,9 +37,9 @@ int prompt()
  * Function: main
  * Purpose: This is the entry point and driver for the program.
  ***********************************************************************/
-int main()
+int main ()
 {
-   int num = prompt();
+   int num = prompt ();
    cout << "The number is " << num << "." << endl;
 
    return 0;

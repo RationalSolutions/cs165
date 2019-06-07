@@ -6,9 +6,10 @@
 #include "date.h"
 
 #include <iostream>
+
 using namespace std;
 
-int main()
+int main ()
 {
    int month;
    int day;
@@ -23,11 +24,11 @@ int main()
    cout << endl;
 
    Date date;
-   date.set(month, day, year);
+   date.set (month, day, year);
 
-   date.displayAmerican();
-   date.displayEuropean();
-   date.displayISO();
+   date.displayAmerican ();
+   date.displayEuropean ();
+   date.displayISO ();
 
    return 0;
 }

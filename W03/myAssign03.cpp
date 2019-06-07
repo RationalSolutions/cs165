@@ -5,13 +5,13 @@
 * Author:
 *    Coby Jenkins
 * Summary: 
-*    E Write a program to scan through a log to identify users who accessed
- *    files in a particular window of time
+*    Write a program to scan through a log to identify users who accessed
+*    files in a particular window of time
 *
 *    Estimated:  4.0 hrs
 *    Actual:     8.0 hrs
 *      figuring out how to split the read file method appropriately to meet
- *      the requirements.
+*      the requirements.
 ************************************************************************/
 
 #include <iostream>

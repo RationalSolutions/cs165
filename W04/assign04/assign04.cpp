@@ -11,11 +11,11 @@ using namespace std;
 
 #include "product.h"
 
-int main()
+int main ()
 {
    Product product;
 
-   product.prompt();
+   product.prompt ();
 
    cout << endl;
    cout << "Choose from the following options:\n";
@@ -30,20 +30,20 @@ int main()
 
    cout << endl;
 
-   cout.setf(ios::fixed);
-   cout.setf(ios::showpoint);
-   cout.precision(2);
+   cout.setf (ios::fixed);
+   cout.setf (ios::showpoint);
+   cout.precision (2);
 
-   switch(choice)
+   switch (choice)
    {
       case 1:
-         product.displayAdvertisingProfile();
+         product.displayAdvertisingProfile ();
          break;
       case 2:
-         product.displayInventoryLineItem();
+         product.displayInventoryLineItem ();
          break;
       case 3:
-         product.displayReceipt();
+         product.displayReceipt ();
          break;
    }
 
