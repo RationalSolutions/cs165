@@ -1,5 +1,17 @@
 // File: address.cpp
 
 #include "address.h"
+#include <iostream>
 
-// Put your method bodies for the address class here
+using namespace std;
+
+/**********************************************************************
+* FUNCTION: Display
+* PURPOSE: Displays the address in a mailing format
+***********************************************************************/
+void Address::display()
+{
+   cout << this->street << endl;
+   cout << this->city << ", " << this->state;
+   cout << " " << this->zip << endl;
+}
