@@ -1,5 +1,14 @@
-// File: customer.cpp
-
 #include "customer.h"
+#include <string>
+#include <iostream>
 
-// Put the method bodies for your customer class here
+
+/**********************************************************************
+* FUNCTION: Display
+* PURPOSE: Displays the name, and address in a mailing format
+***********************************************************************/
+void Customer::display ()
+{
+   cout << this->name << endl;
+   this->address.display ();
+}

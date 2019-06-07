@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <iomanip>
+
 using namespace std;
 
 #include "money.h"
@@ -13,7 +14,7 @@ using namespace std;
  * Purpose: Asks the user for values for dollars and cents
  *   and stores them.
  ****************************************************************/
-void Money :: prompt()
+void Money::prompt ()
 {
    int dollars;
    int cents;
@@ -24,16 +25,16 @@ void Money :: prompt()
    cout << "Cents: ";
    cin >> cents;
 
-   setDollars(dollars);
-   setCents(cents);
+   setDollars (dollars);
+   setCents (cents);
 }
 
 /*****************************************************************
  * Function: display
  * Purpose: Displays the value of the money object.
  ****************************************************************/
-void Money :: display() const 
+void Money::display () const
 {
-   cout << "$" << getDollars() << ".";
-   cout << setfill('0') << setw(2) << getCents();
+   cout << "$" << getDollars () << ".";
+   cout << setfill ('0') << setw (2) << getCents ();
 }

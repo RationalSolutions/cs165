@@ -6,6 +6,7 @@
 
 
 #include <iostream>
+
 using namespace std;
 
 #include "money.h"
@@ -14,17 +15,17 @@ using namespace std;
  * Function: main
  * Purpose: Test the money class
  ****************************************************************/
-int main()
+int main ()
 {
    Money money;
 
-   money.prompt();
-   money.display();
+   money.prompt ();
+   money.display ();
 
    cout << endl;
 
-   cout << "That is " << money.getDollars() << " dollars and "
-        << money.getCents() << " cents!\n";
+   cout << "That is " << money.getDollars () << " dollars and "
+        << money.getCents () << " cents!\n";
 
    return 0;
 }
