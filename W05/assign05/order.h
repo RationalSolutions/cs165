@@ -9,30 +9,16 @@ class Order
 public:
 
    //getters
-   Product getProduct () const
-   { return this->product; }
-
-   int getQuantity () const
-   { return this->quantity; }
-
-   Customer getCustomer () const
-   { return this->customer; }
-
-   string getShippingZip () const
-   { return this->getCustomer ().getAddress ().getZip (); }
-
-   float getTotalPrice () const
-   { return (this->getProduct ().getTotalPrice () * this->quantity); }
+   Product getProduct () const { return this->product; }
+   int getQuantity () const { return this->quantity; }
+   Customer getCustomer () const { return this->customer; }
+   string getShippingZip () const { return this->getCustomer ().getAddress ().getZip (); }
+   float getTotalPrice () const { return (this->getProduct ().getTotalPrice () * this->quantity); }
 
    //setters
-   void setProduct (Product product)
-   { this->product = product; }
-
-   void setQuantity (int quantity)
-   { this->quantity = quantity; }
-
-   void setCustomer (Customer customer)
-   { this->customer = customer; }
+   void setProduct (Product product) { this->product = product; }
+   void setQuantity (int quantity) { this->quantity = quantity; }
+   void setCustomer (Customer customer) { this->customer = customer; }
 
    //constructors
    Order ()
@@ -51,7 +37,6 @@ public:
 
    //class methods
    void displayShippingLabel ();
-
    void displayInformation ();
 
 

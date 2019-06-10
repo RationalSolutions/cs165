@@ -14,17 +14,14 @@ class Product
 {
 public:
 
-   //setters
    void prompt();
 
-   //getters
    float getTotalPrice();
-   float getSalesTax();
-   float getShippingCost();
 
-   //class methods
    void displayAdvertisingProfile();
+
    void displayInventoryLineItem();
+
    void displayReceipt();
 
 private:
@@ -35,11 +32,11 @@ private:
    double shipCost;
    double salesTax;
 
-
-   //class methods
    void formatReceiptLine(string name, float amount);
 
+   float getSalesTax();
 
+   float getShippingCost();
 
 };
 
