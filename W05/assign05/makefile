@@ -5,7 +5,8 @@
 # Author:
 #     Coby Jenkins
 # Summary:
-#     Put your summary code here... 
+#     The addition of the Address, Customer, and Order classes
+#       along with some methods for the Product class
 ###############################################################
 
 

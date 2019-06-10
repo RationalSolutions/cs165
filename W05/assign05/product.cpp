@@ -79,8 +79,12 @@ float Product::getTotalPrice()
 * FUNCTION: Display Advertising Profile
 * PURPOSE: Displays product information in an advertising profile
 ***********************************************************************/
-void Product::displayAdvertisingProfile()
+void Product::displayAdvertising()
 {
+   cout.setf(ios::fixed);
+   cout.setf(ios::showpoint);
+   cout.precision(2);
+
    cout << this->name << " - $" << this->basePrice << endl;
    cout << "(" << this->description << ")" << endl;
 }
@@ -89,7 +93,7 @@ void Product::displayAdvertisingProfile()
 * FUNCTION: Display Inventory Line Item
 * PURPOSE: Displays product information in an Inventory line item
 ***********************************************************************/
-void Product::displayInventoryLineItem()
+void Product::displayInventory()
 {
    cout << "$" << this->basePrice << " - " << this->name;
    cout.precision(1);
@@ -104,25 +108,16 @@ void Product::displayInventoryLineItem()
 ***********************************************************************/
 void Product::displayReceipt()
 {
+   cout.setf(ios::fixed);
+   cout.setf(ios::showpoint);
+   cout.precision(2);
+
+   getSalesTax();
+   getShippingCost();
+
    cout << this->name << endl;
-   formatReceiptLine("Price", this->basePrice);
-   formatReceiptLine("Sales tax", getSalesTax());
-   formatReceiptLine("Shipping cost", getShippingCost());
-   formatReceiptLine("Total", getTotalPrice());
-}
-
-
-/**********************************************************************
-* FUNCTION: Format Receipt Line
-* PURPOSE: Formats a line for the receipt
-***********************************************************************/
-void Product::formatReceiptLine(string name, float amount)
-{
-   cout << "  " << name << ": ";
-   for (int i = 0; i < WHITESPACES - name.length(); i++)
-      cout << " ";
-   cout << "$   ";
-   if (amount < 10)
-      cout << " ";
-   cout << amount << endl;
+   cout << "  Price:" << setw(10) << "$" << setw(8) << basePrice << "\n";
+   cout << "  Sales tax:" << setw(6) << "$" << setw(8) << getSalesTax() << endl;
+   cout << "  Shipping cost:" << setw(2) << "$" << setw(8) << getShippingCost() << endl;
+   cout << "  Total:" << setw(10) << "$" << setw(8) << getTotalPrice() << endl;
 }

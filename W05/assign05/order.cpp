@@ -19,8 +19,17 @@ void Order::displayShippingLabel()
 ***********************************************************************/
 void Order::displayInformation()
 {
-   float totalPrice = getProduct().getTotalPrice() * getQuantity();
+
    cout << getCustomer().getName() << endl;
    cout << getProduct().getName() << endl;
-   cout << "Total Price: $" << totalPrice << endl;
+   cout << "Total Price: $" << getTotalPrice() << endl;
+}
+
+/**********************************************************************
+* FUNCTION: Get Total Price
+* PURPOSE: Calculates the total price based on product price and quantity
+***********************************************************************/
+float Order::getTotalPrice()
+{
+   return product.getTotalPrice() * this->quantity;
 }

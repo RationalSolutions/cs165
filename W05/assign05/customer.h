@@ -7,19 +7,15 @@ class Customer
 {
 public:
    //getters
-   string getName () const
-   { return this->name; }
+   string getName () const { return this->name; }
 
-   Address getAddress
-   const { return this->address; }
+   Address getAddress () const { return this->address; }
 
 
    //setters
-   void setName (string name)
-   { this->name = name; }
+   void setName (string name) { this->name = name; }
 
-   void setAddress (Address address)
-   { this->address = address; }
+   void setAddress (Address address) { this->address = address; }
 
    //constructors
    Customer ()

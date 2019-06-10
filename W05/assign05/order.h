@@ -12,8 +12,8 @@ public:
    Product getProduct () const { return this->product; }
    int getQuantity () const { return this->quantity; }
    Customer getCustomer () const { return this->customer; }
-   string getShippingZip () const { return this->getCustomer ().getAddress ().getZip (); }
-   float getTotalPrice () const { return (this->getProduct ().getTotalPrice () * this->quantity); }
+   string getShippingZip () const { return this->customer.getAddress().getZip(); }
+   float getTotalPrice ();
 
    //setters
    void setProduct (Product product) { this->product = product; }
