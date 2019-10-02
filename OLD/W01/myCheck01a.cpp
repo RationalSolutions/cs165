@@ -1,6 +1,6 @@
 /***********************************************************************
 * Program:
-*    Checkpoint 02a, Structs
+*    Checkpoint 01a, C++ Basics  
 *    Brother Alvey, CS165
 * Author:
 *    Coby Jenkins
@@ -10,42 +10,25 @@
 
 #include <iostream>
 #include <string>
+
 using namespace std;
-
-struct Student
-{
-   string firstName;
-   string lastName;
-   int idNumber;
-};
-
-void displayStudent(const Student & student){
-   cout << "Your information:\n"
-        << student.idNumber
-        << " - "
-        << student.firstName
-        << " "
-        << student.lastName
-        << endl;
-}
 
 /**********************************************************************
  * Function: main
  * Purpose: This is the entry point and driver for the program.
  ***********************************************************************/
-int main()
+int main ()
 {
-   Student student;
+   string name;
+   string age;
 
+   cout << "Hello CS 165 World!\n";
    cout << "Please enter your first name: ";
-   cin >> student.firstName;
-   cout << "Please enter your last name: ";
-   cin >> student.lastName;
-   cout << "Please enter your id number: ";
-   cin >> student.idNumber;
+   cin >> name;
+   cout << "Please enter your age: ";
+   cin >> age;
    cout << endl;
-
-   displayStudent(student);
+   cout << "Hello " << name << ", you are " << age << " years old.\n";
 
    return 0;
 }

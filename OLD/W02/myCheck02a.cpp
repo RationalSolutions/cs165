@@ -9,24 +9,21 @@
 * ***********************************************************************/
 
 #include <iostream>
-#include <string>
 using namespace std;
 
 struct Student
 {
    string firstName;
    string lastName;
-   int idNumber;
+   int studentId;
 };
 
-void displayStudent(const Student & student){
-   cout << "Your information:\n"
-        << student.idNumber
-        << " - "
-        << student.firstName
-        << " "
-        << student.lastName
-        << endl;
+void displayStudent(Student user)
+{
+   cout << "Your information:\n";
+   cout << user.studentId << " - " << user.firstName << " " << user.lastName
+   << "\n";
+
 }
 
 /**********************************************************************
@@ -35,17 +32,17 @@ void displayStudent(const Student & student){
  ***********************************************************************/
 int main()
 {
-   Student student;
+   Student user;
 
    cout << "Please enter your first name: ";
-   cin >> student.firstName;
+   cin >> user.firstName;
    cout << "Please enter your last name: ";
-   cin >> student.lastName;
+   cin >> user.lastName;
    cout << "Please enter your id number: ";
-   cin >> student.idNumber;
+   cin >> user.studentId;
    cout << endl;
 
-   displayStudent(student);
+   displayStudent(user);
 
    return 0;
 }

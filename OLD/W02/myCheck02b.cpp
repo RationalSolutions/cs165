@@ -9,6 +9,7 @@
 * ***********************************************************************/
 
 #include <iostream>
+
 using namespace std;
 
 struct Complex
@@ -17,34 +18,33 @@ struct Complex
    double imaginary;
 };
 
-void prompt(Complex &complex)
+void prompt (Complex &x)
 {
+
    cout << "Real: ";
-   cin >> complex.real;
+   cin >> x.real;
    cout << "Imaginary: ";
-   cin >> complex.imaginary;
+   cin >> x.imaginary;
+
 }
 
-void display(const Complex &complex)
+void display (Complex &x)
 {
-   cout << complex.real
-        << " + "
-        << complex.imaginary
-        << "i";
+   cout << x.real << " + " << x.imaginary << "i" << endl;
 }
 
 /**********************************************************************
  * Function: addComplex
  * Purpose: Adds two complex numbers together and returns the sum.
  ***********************************************************************/
-Complex addComplex(const Complex & x, const Complex & y)
+Complex addComplex (const Complex &x, const Complex &y)
 {
    Complex sum;
 
    sum.real = x.real + y.real;
    sum.imaginary = x.imaginary + y.imaginary;
 
-   return  sum;
+   return sum;
 }
 
 
@@ -52,29 +52,25 @@ Complex addComplex(const Complex & x, const Complex & y)
  * Function: main
  * Purpose: This is the entry point and driver for the program.
  ***********************************************************************/
-int main()
+int main ()
 {
    // Declare two Complex objects, c1 and c2
    Complex c1, c2;
 
-
    // Call your prompt function twice to fill in c1, and c2
-   prompt(c1);
-   prompt(c2);
-
+   prompt (c1);
+   prompt (c2);
 
    // Declare another Complex for the sum
    Complex sum;
 
-
    // Call the addComplex function, putting the result in sum;
-   sum = addComplex(c1, c2);
+   sum = addComplex (c1, c2);
 
-   
+
    cout << "\nThe sum is: ";
-   display(sum);
-   cout << endl;
- 
+   display (sum);
+
    return 0;
 }
 
