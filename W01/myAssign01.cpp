@@ -23,7 +23,6 @@ const int MAX_BUFFER = 256;
 
 /**********************************************************************
 * Gets the users DNA sequence
-* TODO: Add error checking and validation
 ***********************************************************************/
 void getSequence(char dnaSequence[][MAX_SEQ_LENGTH])
 {
@@ -34,7 +33,6 @@ void getSequence(char dnaSequence[][MAX_SEQ_LENGTH])
 
 /**********************************************************************
 * Gets the number of relatives being compared
-* TODO: Add error checking and validation
 ***********************************************************************/
 int getRelativeCount()
 {
@@ -63,7 +61,6 @@ void getRelativeNames(int relativeCount, char relativeNames[][MAX_BUFFER])
 
 /**********************************************************************
 * Gets the relatives DNA sequence
-* TODO: Add error checking and validation
 ***********************************************************************/
 void getSequence(int relativeCount, char dnaSequence[][MAX_SEQ_LENGTH],
             char relativeNames[][MAX_BUFFER])
@@ -79,7 +76,6 @@ void getSequence(int relativeCount, char dnaSequence[][MAX_SEQ_LENGTH],
 
 /**********************************************************************
 * Gets the relatives DNA sequence
-* TODO: Add error checking and validation
 ***********************************************************************/
 void displayResults(
                     char relativeNames[][MAX_BUFFER],

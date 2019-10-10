@@ -20,24 +20,23 @@ using namespace std;
 ***********************************************************************/
 int prompt ()
 {
-   int number;
+   int num;
 
-   //does this loop at least once and if it doesn't get a valid input, repeats
    do
    {
       cout << "Enter a number: ";
-      cin >> number;
+      cin >> num;
 
       if (cin.fail ())
       {
          cout << "Invalid input." << endl;
          cin.clear ();
-         cin.ignore (265, "\n");
+         cin.ignore (256, '\n');
       }
 
-   } while (!number)
+   } while (!num);
 
-   return number;
+   return num;
 }
 
 /**********************************************************************
@@ -47,6 +46,6 @@ int prompt ()
 int main()
 {
    int number = prompt ();
-   cout << "The number is: " << number << ".\n";
+   cout << "The number is " << number << ".\n";
    return 0;
 }
