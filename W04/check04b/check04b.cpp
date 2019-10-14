@@ -18,6 +18,7 @@ int main()
    cin >> day;
    cout << "Year: ";
    cin >> year;
+   cout << endl;
 
    Date date;
    

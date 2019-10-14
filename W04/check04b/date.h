@@ -13,9 +13,9 @@ private:
 
 public:
    void set(int month, int day, int year);
-   void displayAmerican():
-   void displayEuropean():
-   void displayISO():
+   void displayAmerican();
+   void displayEuropean();
+   void displayISO();
 };
 
 

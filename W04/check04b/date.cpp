@@ -4,6 +4,8 @@
  ********************************************************************/
 #include "date.h"
 
+#include <iostream>
+using namespace std;
 /**********************************************************************
 * Method: Set
 * Purpose: Sets the day month and year private member variables
