@@ -12,18 +12,12 @@ using namespace std;
 
 int main()
 {
+   cout.setf(ios::fixed);
+   cout.setf(ios::showpoint);
 
-   //TODO: Create a main function that creates a new Product, calls its
-   //       prompt method. Then have main prompt the user for which kind of display
-   //       to see (advertising profile, an inventory line item, or a receipt for
-   //       this product) and call the appropriate method.
+   Product product;
 
-   // Declare your Product object here
-   
-
-   // Call your prompt function here
-
-
+   product.prompt ();
 
    cout << endl;
    cout << "Choose from the following options:\n";
@@ -40,15 +34,15 @@ int main()
 
    if (choice == 1)
    {
-      // Call your display advertising profile function here
+      product.displayAdvertisingProfile ();
    }
    else if (choice == 2)
    {
-      // Call your display inventory line item function here
+      product.displayInventoryLineItem ();
    }
    else
    {
-      // Call your display receipt function here
+      product.displayReceipt ();
    }
 
    return 0;
