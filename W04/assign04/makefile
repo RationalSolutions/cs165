@@ -1,11 +1,12 @@
 ###############################################################
 # Program:
 #     Assignment 04, Product inventory
-#     Brother {Burton, Falin, Ercanbrack, Comeau}, CS165
+#     Brother Alvey, CS165
 # Author:
-#     your name here
+#     Coby Jenkins
 # Summary:
-#     Put your summary code here... 
+#     Demonstration of the usage of classes and  how to create the necessary
+#       parts.
 ###############################################################
 
 

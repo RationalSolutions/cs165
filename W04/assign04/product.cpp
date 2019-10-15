@@ -21,8 +21,7 @@ const double SHIPPING_RATE = 0.1;
 const double SHIPPING_MIN = 2.0;
 const double BASE_SHIPPING_WEIGHT = 5.0;
 
-cout.setf(ios::fixed);
-cout.setf(ios::showpoint);
+
 
 
 /**
@@ -31,9 +30,6 @@ cout.setf(ios::showpoint);
  */
 void Product::prompt()
 {
-
-   double tempDouble;
-
    cout << "Enter name: ";
    name = getUserInput("name");
 
@@ -41,10 +37,10 @@ void Product::prompt()
    description = getUserInput("description");
 
    cout << "Enter weight: ";
-   weight = getUserInput("weight");
+   weight = getUserInput("weight", 1);
 
    cout << "Enter price: ";
-   basePrice = getUserInput("price");
+   basePrice = getUserInput("price", 1);
 }
 
 /**
@@ -55,20 +51,20 @@ void Product::prompt()
 string Product::getUserInput(string prompt)
 {
    string tempString;
+   bool ok = false;
+   int length;
 
    do
    {
-      bool ok = false;
       getline(cin, tempString);
+      length = tempString.length();
 
-      if(isValid(tempString.length()))
+      if(isValid(length))
          ok = true;
       else
       {
          cout << "Enter " << prompt << ": ";
-         tempString = null;
       }
-
    }while (!ok);
 
    return tempString;
@@ -79,13 +75,13 @@ string Product::getUserInput(string prompt)
  * PURPOSE: accepts and validates a double input from the user
  * @return
  */
-double Product::getUserInput(string prompt)
+double Product::getUserInput(string prompt, int diff)
 {
    double tempDouble;
+   bool ok = false;
 
    do
    {
-      bool ok = false;
       cin >> tempDouble;
       if(cin.fail())
       {
@@ -181,6 +177,7 @@ double Product::getTotalPrice ()
  */
 void Product::displayAdvertisingProfile ()
 {
+    cout.precision(2);
     cout << name << " - $" << basePrice << endl;
     cout << "(" << description << ")" << endl;
 }
@@ -191,11 +188,10 @@ void Product::displayAdvertisingProfile ()
  */
 void Product::displayInventoryLineItem ()
 {
+   cout.precision(2);
+   cout << "$" << basePrice << " - " << name;
    cout.precision(1);
-   cout << "$" << basePrice
-        << " - " << name
-        << " - " << weight
-        << " lbs" << endl;
+   cout << " - " << weight << " lbs" << endl;
 }
 
 
@@ -207,11 +203,11 @@ void Product::displayReceipt ()
 {
    cout.precision(2);
    cout << name << endl;
-   cout << "  " << "Price:" << setw(15) << "$" << setw(8) << basePrice << endl;
+   cout << "  " << "Price:" << setw(10) << "$" << setw(8) << basePrice << endl;
    cout << "  " << "Sales tax:"
-        << setw(15) << "$" << setw(8) << getSalesTax () << endl;
+        << setw(6) << "$" << setw(8) << getSalesTax () << endl;
    cout << "  " << "Shipping cost:"
-        << setw(15) << "$" << setw(8) << getShippingCost() << endl;
-   cout << "  " << "Total:" << setw(15) << "$" << setw(8) << getTotalPrice()
+        << setw(2) << "$" << setw(8) << getShippingCost() << endl;
+   cout << "  " << "Total:" << setw(10) << "$" << setw(8) << getTotalPrice()
         << endl;
 }

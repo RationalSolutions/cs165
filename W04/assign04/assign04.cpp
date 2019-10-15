@@ -1,14 +1,14 @@
 /***************************************************************
  * File: assign04.cpp
- * Author: (your name here)
+ * Author: Coby Jenkins
  * Purpose: Contains the main function to test the Product class.
  ***************************************************************/
+
+#include "product.h"
 
 #include <iostream>
 #include <string>
 using namespace std;
-
-#include "product.h"
 
 int main()
 {
@@ -17,7 +17,7 @@ int main()
 
    Product product;
 
-   product.prompt ();
+   product.prompt();
 
    cout << endl;
    cout << "Choose from the following options:\n";
