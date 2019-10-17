@@ -20,6 +20,24 @@ public:
 
    int getDollars() const;
    int getCents() const;
+
+   Money ()
+   {
+      setDollars (0);
+      setCents (0);
+   }
+
+   Money (int dollars)
+   {
+      setDollars (dollars);
+      setCents (0);
+   }
+
+   Money (int dollars, int cents)
+   {
+      setDollars (dollars);
+      setCents (cents);
+   }
 };
 
 #endif

@@ -20,6 +20,7 @@ public:
 
    int getDollars() const;
    int getCents() const;
+
 };
 
 #endif
