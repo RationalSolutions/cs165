@@ -28,6 +28,16 @@
 //             displayShippingLabel
 //             displayInformation
 
+Class Order
+{
+private:
+   Product product;
+   Customer customer;
+   int quantity;
+
+public:
+   void setProduct()
+};
 //TODO: should have following constructors:
 //      Default - Set the quantity to 0 and uses the product and customer's
 //                default constructors.
