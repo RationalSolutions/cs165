@@ -1,31 +1,55 @@
-// File: address.h
+/***************************************************************
+ * File: address.h
+ * Author: Coby Jenkins
+ * Purpose: Contains the definition of the Address class
+ ***************************************************************/
 
 #ifndef ADDRESS_H
 #define ADDRESS_H
 
-// Put your Address class here
+#include <string>
+using namespace std;
+
+Class Address
+      {
+      private:
+         string street;
+         string city;
+         string state;
+         string zip;
+
+      public:
+         //Getters
+         string getStreet() const {return street};
+         string getCity() const {return city};
+         string getState() const {return state};
+         string getZip() const {return zip};
+
+         //Setters
+         void setStreet(string street){this->street = street};
+         void setCity(string city){this->city = city};
+         void setStatet(string state){this->state = state};
+         void setZip(string zip){this->zip = zip};
+
+         //Display
+         void display();
+
+         //Constructors
+         Address()
+         {
+            setStreet("unknown");
+            setCity("");
+            setState("");
+            setZip("00000");
+         }
+
+         Address(string street, string city, string state, string zip)
+         {
+            setStreet(street);
+            setCity(city);
+            setState(state);
+            setZip(zip);
+         }
+      };
 
 #endif
-
-//TODO: Create a class for an Address that has the following
-//       private data members:
-//               street : string
-//               city : string
-//               state : string
-//               zip : string
-//       public methods:
-//               getStreet / setStreet
-//               getCity / setCity
-//               getState / setState
-//               getZip / setZip
-//               display
-
-//TODO: display uses set format:
-//       street
-//       city, state zip
-
-//TODO: should have following constructors:
-//      Default - Set the street to "unknown", the zip to "00000", and the
-//                other data members to "".
-//      Non-default - Accept 4 strings (street, city, state, zip) and set
-//                    each of the values.

@@ -1,15 +1,14 @@
-// File: customer.cpp
+/***************************************************************
+ * File: customer.cpp
+ * Author: Coby Jenkins
+ * Purpose: Contains the method implementations for the Customer class.
+ ***************************************************************/
 
 #include "customer.h"
+using namespace std;
 
-// Put the method bodies for your customer class here
-
-//TODO: Setup the following methods
-//                      getName / setName
-//                      getAddress / setAddress
-//                      display
-
-//TODO: display uses set format:
-//       name
-//       street
-//       city, state zip
+void Customer::display()
+{
+   cout << getName() << endl;
+   cout << address.display() << endl;
+}

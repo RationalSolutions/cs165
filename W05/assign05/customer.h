@@ -1,24 +1,45 @@
-// File: customer.h
+/***************************************************************
+ * File: customer.h
+ * Author: Coby Jenkins
+ * Purpose: Contains the definition of the Customer class
+ ***************************************************************/
 
 #ifndef CUSTOMER_H
 #define CUSTOMER_H
 
 #include "address.h"
 
-// put your Customer class here
+#include <string>
+using namespace std;
+
+Class Customer
+      {
+      private:
+         string name;
+         Address address;
+
+      public:
+         //Getters
+         string getName() const {return name};
+         Address getAddress() const {return address};
+
+         //Setters
+         void setName(string name){this->name = name};
+         void setAddress(Address address){this-address = address};
+         void display();
+
+         //Constructors
+         Customer()
+         {
+            name = "unspecified";
+            address = Address();
+         }
+
+         Customer(string name, Address address)
+         {
+            this->name = name;
+            this->address = address;
+         }
+      };
 
 #endif
-
-//TODO: Create a class for a Customer that has the following:
-//       private data members:
-//                            name : string
-//                            address : Address
-//       public methods:
-//                      getName / setName
-//                      getAddress / setAddress
-//                      display
-
-//TODO: should have following constructors:
-//      Default - Set the name to "unspecified" and uses the address's
-//                default constructor.
-//      Non-default - Accept a name and an address object.
