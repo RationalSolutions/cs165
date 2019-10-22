@@ -12,7 +12,7 @@
 #include <string>
 using namespace std;
 
-Class Customer
+class Customer
       {
       private:
          string name;
@@ -20,12 +20,12 @@ Class Customer
 
       public:
          //Getters
-         string getName() const {return name};
-         Address getAddress() const {return address};
+         string getName() const {return name;};
+         Address getAddress() const {return address;};
 
          //Setters
-         void setName(string name){this->name = name};
-         void setAddress(Address address){this-address = address};
+         void setName(string name){this->name = name;};
+         void setAddress(Address address){this->address = address;};
          void display();
 
          //Constructors

@@ -36,10 +36,10 @@ public:
    void setBasePrice(double basePrice){this->basePrice = basePrice;}
    void setWeight(double weight){this->weight = weight;}
 
-   string getName(string name) const {return name;}
-   string getDescription(string description) const {return description;}
-   double getBasePrice(double basePrice) const {return basePrice;}
-   double getWeight(double weight) const {return weight;}
+   string getName() const {return name;}
+   string getDescription() const {return description;}
+   double getBasePrice() const {return basePrice;}
+   double getWeight() const {return weight;}
 
    Product()
    {
@@ -47,7 +47,6 @@ public:
       setDescription ("");
       setBasePrice (0);
       setWeight (0);
-
    }
 
    Product(string name, string description, double basePrice, double weight)
@@ -56,7 +55,6 @@ public:
       setDescription (description);
       setBasePrice (basePrice);
       setWeight (weight);
-
    }
 };
 

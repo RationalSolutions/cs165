@@ -10,7 +10,7 @@
 #include <string>
 using namespace std;
 
-Class Address
+class Address
       {
       private:
          string street;
@@ -20,16 +20,16 @@ Class Address
 
       public:
          //Getters
-         string getStreet() const {return street};
-         string getCity() const {return city};
-         string getState() const {return state};
-         string getZip() const {return zip};
+         string getStreet() const {return street;};
+         string getCity() const {return city;};
+         string getState() const {return state;};
+         string getZip() const {return zip;};
 
          //Setters
-         void setStreet(string street){this->street = street};
-         void setCity(string city){this->city = city};
-         void setStatet(string state){this->state = state};
-         void setZip(string zip){this->zip = zip};
+         void setStreet(string street){this->street = street;};
+         void setCity(string city){this->city = city;};
+         void setState(string state){this->state = state;};
+         void setZip(string zip){this->zip = zip;};
 
          //Display
          void display();

@@ -5,10 +5,13 @@
  ***************************************************************/
 
 #include "customer.h"
+#include "address.h"
+
+#include <iostream>
 using namespace std;
 
 void Customer::display()
 {
    cout << getName() << endl;
-   cout << address.display() << endl;
+   address.display();
 }

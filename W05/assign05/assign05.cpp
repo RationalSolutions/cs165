@@ -80,7 +80,7 @@ int main()
    cout << "*** PRODUCT ***\n";
    cout << "Default constructor:\n";
    Product theRing;
-   theRing.displayAdvertising();
+   theRing.displayAdvertisingProfile();
    cout << endl;
 
    cout << "Getters/Setters:\n";
@@ -103,10 +103,10 @@ int main()
    Product staff("Wizard Staff", "More than just a walking stick", 100, 10);
    
    cout << "\nAdvertising:\n";
-   staff.displayAdvertising();
+   staff.displayAdvertisingProfile();
    
    cout << "\nInventory:\n";
-   staff.displayInventory();
+   staff.displayInventoryLineItem();
 
    cout << "\nReceipt:\n";
    staff.displayReceipt();

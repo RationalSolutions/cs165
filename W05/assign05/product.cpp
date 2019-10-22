@@ -177,6 +177,8 @@ double Product::getTotalPrice ()
  */
 void Product::displayAdvertisingProfile ()
 {
+    cout.setf(ios::fixed);
+    cout.setf(ios::showpoint);
     cout.precision(2);
     cout << name << " - $" << basePrice << endl;
     cout << "(" << description << ")" << endl;
