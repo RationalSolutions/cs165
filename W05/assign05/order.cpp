@@ -15,7 +15,7 @@ using namespace std;
 
 /**
  * METHOD: displayInformation()
- * PURPOSE:
+ * PURPOSE: Displays the information in the desiginated format
  */
 void Order::displayInformation()
 {
@@ -24,6 +24,11 @@ void Order::displayInformation()
    cout << "Total Price: $" << getTotalPrice() << endl;
 }
 
+/**
+ * METHOD: getShippingZip()
+ * PURPOSE: gets the customers shipping zip code. This required a temp variable
+ * @return
+ */
 string Order::getShippingZip()
 {
    Address temp = customer.getAddress();

@@ -9,6 +9,10 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * METHOD: display()
+ * PURPOSE: Displays the information in the desiginated format
+ */
 void Address::display()
 {
    cout << street << endl;

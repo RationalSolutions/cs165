@@ -10,6 +10,10 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * METHOD: display()
+ * PURPOSE: Displays the information in the desiginated format
+ */
 void Customer::display()
 {
    cout << getName() << endl;
