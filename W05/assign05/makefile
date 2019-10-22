@@ -1,11 +1,12 @@
 ###############################################################
 # Program:
 #     Assignment 05, Order Tracking
-#     Brother {Burton, Falin, Ercanbrack, Comeau}, CS165
+#     Brother Alvey, CS165
 # Author:
-#     your name here
+#     Coby Jenkins
 # Summary:
-#     Put your summary code here... 
+#     Task: Create classes to manage orders
+#     Purpose: This will give you experience in building a product library
 ###############################################################
 
 
