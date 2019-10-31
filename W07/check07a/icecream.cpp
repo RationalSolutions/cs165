@@ -31,7 +31,7 @@ IceCream::IceCream(string flavor, float price)
  **********************************************************************/
 float IceCream::getTotalPrice() const
 {
-   totalPrice = price + (price * salesTax);
+   float totalPrice = price + (price * salesTax);
 
    return totalPrice;
 }

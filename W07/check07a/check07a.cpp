@@ -30,7 +30,8 @@ int main()
    cout << "Enter alternate sales tax: ";
    cin >> tax;
 
-   // TODO: Set the sales tax static member variable here
+   iceCream1.salesTax = tax;
+   iceCream2.salesTax = tax;
 
 
 
