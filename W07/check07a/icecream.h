@@ -13,6 +13,7 @@ private:
    float price;
 
 public:
+   static float salesTax;
    IceCream();
    IceCream(std::string flavor, float price);
 
