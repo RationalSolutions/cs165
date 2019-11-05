@@ -17,7 +17,7 @@
 #include "velocity.h"
 #include "uiDraw.h"
 
-static const float GRAVITY = 0.1;
+//static const float GRAVITY = 0.1;
 static const float HOR_THRUST = 0.1;
 static const float VER_THRUST = 0.3;
 static const float HOR_FUEL_COST = 1;

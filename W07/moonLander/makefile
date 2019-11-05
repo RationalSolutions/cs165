@@ -57,7 +57,7 @@ driver.o: driver.cpp game.h uiInteract.h
 # Then, don't forget to add them to the dependecy list for a.out above.
 #######################################################################
 
-lander.o: lander.cpp lander.h point.h velocity.h
+lander.o: lander.cpp lander.h point.h velocity.h uiDraw.h
 	g++ -c lander.cpp
 
 velocity.o: velocity.cpp velocity.h

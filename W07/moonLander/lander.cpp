@@ -15,9 +15,9 @@
 * Applies gravitational force on the
 * ship, pulling it downward.
 ***************************************/
-void Lander::applyGravity()
+void Lander::applyGravity(float gravity)
 {
-   landerVel.setDy (landerVel.getDy () - GRAVITY);
+   landerVel.setDy (landerVel.getDy () - gravity);
 }
 
 /***************************************
