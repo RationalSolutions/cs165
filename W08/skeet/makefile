@@ -1,9 +1,9 @@
 ###############################################################
 # Program:
 #     Milestone 08, Skeet
-#     Brother {Burton, Falin, Ercanbrack, Comeau}, CS165
+#     Brother Alvey, CS165
 # Author:
-#     your name here
+#     Coby Jenkins
 # Summary:
 #     Put your summary code here... 
 # Above and Beyond
@@ -18,8 +18,10 @@ LFLAGS = -lglut -lGLU -lGL
 ###############################################################
 # Build the main game
 ###############################################################
-a.out: driver.o game.o uiInteract.o uiDraw.o point.o rifle.o 
-	g++ driver.o game.o uiInteract.o uiDraw.o point.o rifle.o $(LFLAGS)
+a.out: driver.o game.o uiInteract.o uiDraw.o point.o rifle.o velocity.o
+projectile.o bullet.o bird.o standardBird.o toughBird.o sacredBird.o
+	g++ driver.o game.o uiInteract.o uiDraw.o point.o rifle.o velocity.o
+	projectile.o bullet.o bird.o standardBird.o toughBird.o sacredBird.o $(LFLAGS)
 
 ###############################################################
 # Individual files
@@ -46,14 +48,37 @@ driver.o: game.h uiInteract.h driver.cpp
 
 rifle.o: rifle.h point.h uiDraw.h rifle.cpp
 	g++ -c rifle.cpp
-
 #######################################################################
 # ADD YOUR ADDITIONAL RULES HERE!
-#
-# Then, don't forget to add them to the dependecy list for a.out above.
+#   velocity.o      handles velocity
+#   projectile.o    super class for bird/bullet
+#   bullet.o        handles bullets
+#   bird.o          handles super class for birds
+#   standardBird.o  handles the standard bird
+#   toughBird.o     handles the tough bird
+#   sacredBird.o    handles the sacred bird
+# Then, don't forget to add them to the dependency list for a.out above.
 #######################################################################
+velocity.o: velocity.cpp velocity.h
+    g++ -c velocity.cpp
 
+projectile.o: projectile.cpp projectile.h point.h velocity.h
+    g++ -c projectile.cpp
 
+bullet.o: bullet.cpp bullet.h projectile.h
+    g++ -c bullet.cpp
+
+bird.o: bird.cpp bird.h projectile.h uiDraw.h
+    g++ -c bird.cpp
+
+standardBird.o: standardBird.cpp standardBird.h bird.h uiDraw.h
+    g++ -c standardBird.cpp
+
+toughBird.o: toughBird.cpp toughBird.h bird.h uiDraw.h
+    g++ -c toughBird.cpp
+
+sacredBird.o: sacredBird.cpp sacredBird.h bird.h uiDraw.h
+    g++ -c sacredBird.cpp
 ###############################################################
 # General rules
 ###############################################################

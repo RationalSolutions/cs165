@@ -21,8 +21,9 @@
 #include "point.h"
 #include "velocity.h"
 #include "rifle.h"
+#include "bird.h"
+#include "bullet.h"
 
-// TODO: include your bullet and bird classes
 
 
 #define CLOSE_ENOUGH 15
@@ -71,8 +72,7 @@ private:
    
    Rifle rifle;
    std::vector<Bullet> bullets;
-   
-   // TODO: declare your bird here (e.g., "Bird * bird;")
+   Bird * bird;
 
 
    /*************************************************

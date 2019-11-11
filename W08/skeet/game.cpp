@@ -11,7 +11,6 @@
  *************************************************************/
 
 #include "game.h"
-
 #include "uiDraw.h"
 #include "uiInteract.h"
 #include "point.h"
@@ -30,8 +29,7 @@ Game :: Game(Point tl, Point br)
 {
    // Set up the initial conditions of the game
    score = 0;
-
-   // TODO: Set your bird pointer to a good initial value (e.g., NULL)
+   this->bird = NULL;
 
 }
 
@@ -40,9 +38,10 @@ Game :: Game(Point tl, Point br)
  ****************************************/
 Game :: ~Game()
 {
-   // TODO: Check to see if there is currently a bird allocated
-   //       and if so, delete it.
-
+   if(bird != NULL)
+   {
+      delete bird;
+   }
 }
 
 /***************************************
@@ -261,8 +260,13 @@ void Game :: draw(const Interface & ui)
 
    // TODO: Check if you have a valid bird and if it's alive
    // then call it's draw method
-   
-  
+   if(bird != NULL)
+   {
+      if (bird->isAlive())
+      {
+         bird->draw();
+      }
+   }
 
    // draw the rifle
    rifle.draw();
