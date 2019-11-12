@@ -18,10 +18,8 @@ LFLAGS = -lglut -lGLU -lGL
 ###############################################################
 # Build the main game
 ###############################################################
-a.out: driver.o game.o uiInteract.o uiDraw.o point.o rifle.o velocity.o
-projectile.o bullet.o bird.o standardBird.o toughBird.o sacredBird.o
-	g++ driver.o game.o uiInteract.o uiDraw.o point.o rifle.o velocity.o
-	projectile.o bullet.o bird.o standardBird.o toughBird.o sacredBird.o $(LFLAGS)
+a.out: driver.o game.o uiInteract.o uiDraw.o point.o rifle.o velocity.o projectile.o bullet.o bird.o standardBird.o toughBird.o sacredBird.o
+	g++ driver.o game.o uiInteract.o uiDraw.o point.o rifle.o velocity.o projectile.o bullet.o bird.o standardBird.o toughBird.o sacredBird.o $(LFLAGS)
 
 ###############################################################
 # Individual files
@@ -40,7 +38,7 @@ uiInteract.o: uiInteract.cpp uiInteract.h
 point.o: point.cpp point.h
 	g++ -c point.cpp
 
-game.o: game.cpp uiDraw.h uiInteract.h point.h rifle.h bullet.h birds.h
+game.o: game.cpp uiDraw.h uiInteract.h point.h rifle.h bullet.h bird.h
 	g++ -c game.cpp
 
 driver.o: game.h uiInteract.h driver.cpp
@@ -60,25 +58,25 @@ rifle.o: rifle.h point.h uiDraw.h rifle.cpp
 # Then, don't forget to add them to the dependency list for a.out above.
 #######################################################################
 velocity.o: velocity.cpp velocity.h
-    g++ -c velocity.cpp
+	g++ -c velocity.cpp
 
 projectile.o: projectile.cpp projectile.h point.h velocity.h
-    g++ -c projectile.cpp
+	g++ -c projectile.cpp
 
 bullet.o: bullet.cpp bullet.h projectile.h
-    g++ -c bullet.cpp
+	g++ -c bullet.cpp
 
 bird.o: bird.cpp bird.h projectile.h uiDraw.h
-    g++ -c bird.cpp
+	g++ -c bird.cpp
 
 standardBird.o: standardBird.cpp standardBird.h bird.h uiDraw.h
-    g++ -c standardBird.cpp
+	g++ -c standardBird.cpp
 
 toughBird.o: toughBird.cpp toughBird.h bird.h uiDraw.h
-    g++ -c toughBird.cpp
+	g++ -c toughBird.cpp
 
 sacredBird.o: sacredBird.cpp sacredBird.h bird.h uiDraw.h
-    g++ -c sacredBird.cpp
+	g++ -c sacredBird.cpp
 ###############################################################
 # General rules
 ###############################################################

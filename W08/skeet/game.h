@@ -23,6 +23,9 @@
 #include "rifle.h"
 #include "bird.h"
 #include "bullet.h"
+#include "standardBird.h"
+#include "sacredBird.h"
+#include "toughBird.h"
 
 
 

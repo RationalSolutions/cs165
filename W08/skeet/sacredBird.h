@@ -8,7 +8,7 @@
 #include "bird.h"
 #include "uiDraw.h"
 
-class SacredBird : public bird
+class SacredBird : public Bird
 {
 public:
    SacredBird()

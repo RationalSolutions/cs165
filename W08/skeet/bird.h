@@ -1,14 +1,12 @@
-//
-// Created by coby on 11/10/2019.
-//
-
 #ifndef BIRD_H
 #define BIRD_H
 
 #include "uiDraw.h"
 #include "projectile.h"
-//TODO: create bird class that extends projectile
-class Bird : public projectile
+
+using namespace std;
+
+class Bird : public Projectile
 {
 protected:
    int lives;
@@ -16,11 +14,12 @@ protected:
 public:
    Bird()
    {
-      setPoint(Point(-200, random(-200,200)));
+      setPoint(Point(-200, random(-200, 200)));
       velocity.setDx(velocity.getDx() + .1);
       alive = true;
    }
-   Bird(Point & point)
+
+   Bird(Point &point)
    {
       this->point = point;
       velocity.setDx(velocity.getDx() + .1);
@@ -28,6 +27,7 @@ public:
    }
 
    virtual void draw() = 0;
+   virtual void advance() = 0;
    virtual int hit() = 0;
 };
 

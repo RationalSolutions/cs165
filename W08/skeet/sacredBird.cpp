@@ -8,7 +8,8 @@
 
 void SacredBird::advance()
 {
-
+   point.setX(point.getX() + velocity.getDx());
+   point.setY(point.getY() + velocity.getDy() + random(-2,2));
 }
 
 void SacredBird::draw()

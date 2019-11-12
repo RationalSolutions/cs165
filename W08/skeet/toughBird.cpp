@@ -6,7 +6,8 @@
 
 void ToughBird::advance() //TODO: create toughBird that extends bird
 {
-
+   point.setX(point.getX() + velocity.getDx());
+   point.setY(point.getY() + velocity.getDy() + random(-2,2));
 }
 
 void ToughBird::draw()

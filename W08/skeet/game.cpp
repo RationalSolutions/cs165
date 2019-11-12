@@ -127,8 +127,18 @@ void Game :: advanceBird()
 Bird* Game :: createBird()
 {
    Bird* newBird = NULL;
+   int randBird = random(0,2);
 
-   // TODO: Fill this in
+   switch (randBird)
+   {
+      case 0:
+         newBird = new StandardBird;
+         break;
+      case 1:
+         newBird = new SacredBird;
+      case 2:
+         newBird = new ToughBird;
+   }
    
    
    return newBird;
@@ -192,10 +202,9 @@ void Game :: cleanUpZombies()
    if (bird != NULL && !bird->isAlive())
    {
       // the bird is dead, but the memory is not freed up yet
-      
-      // TODO: Clean up the memory used by the bird
-   
-   
+      delete bird;
+      bird = NULL;
+
    }
    
    // Look for dead bullets
@@ -256,10 +265,7 @@ void Game :: handleInput(const Interface & ui)
  *********************************************/
 void Game :: draw(const Interface & ui)
 {
-   // draw the bird
 
-   // TODO: Check if you have a valid bird and if it's alive
-   // then call it's draw method
    if(bird != NULL)
    {
       if (bird->isAlive())

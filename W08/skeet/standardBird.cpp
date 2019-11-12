@@ -6,7 +6,8 @@
 
 void StandardBird::advance()
 {
-
+   point.setX(point.getX() + velocity.getDx());
+   point.setY(point.getY() + velocity.getDy() + random(-2,2));
 }
 
 void StandardBird::draw()

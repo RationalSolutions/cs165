@@ -10,15 +10,16 @@
 
 #include <cmath>
 
-class Bullet : public projectile
+class Bullet : public Projectile
 {
 public:
    Bullet(){
       alive = true;
    }
 
-   void fire(Point & point, float angle);
+   void fire(Point point, float angle);
    void draw(){drawDot(point);}
+   void advance();
 };
 
 #endif //CS165_BULLET_H

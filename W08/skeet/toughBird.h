@@ -7,7 +7,7 @@
 
 #include "bird.h"
 
-class ToughBird : public bird
+class ToughBird : public Bird
 {
 public:
    ToughBird()
