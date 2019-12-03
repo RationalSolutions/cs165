@@ -1,9 +1,9 @@
 /***********************************************************************
 * Program:
 *    Checkpoint 11a, Function Templates
-*    Brother {Burton, Falin, Ercanbrack}, CS165
+*    Brother Alvey, CS165
 * Author:
-*    your name
+*    Coby Jenkins
 * Summary: 
 *    Summaries are not necessary for checkpoint assignments.
 ************************************************************************/
@@ -31,7 +31,7 @@ void swapValues(T & v1, T & v2)
  template <class T>
 int indexOfSmallest(const T array[], int startIndex, int size)
 {
-   int min = array[startIndex];
+   T min = array[startIndex];
    int indexOfMin = startIndex;
 
    for (int index = startIndex + 1; index < size; index++)
@@ -52,7 +52,8 @@ int indexOfSmallest(const T array[], int startIndex, int size)
  *
  * Source: Savitch, Absolute C++ 5th Edition, pp. 216-217
  ***********************************************************/
-void sort(float array[], int size)
+template <class T>
+void sort(T array[], int size)
 {
    int indexOfNextSmallest;
 
