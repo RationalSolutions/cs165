@@ -15,10 +15,10 @@ using namespace std;
  * Function: swapValues
  * Description: Swaps two values
  **********************************************************/
-void swapValues(int &v1, int &v2)
+ template <class T>
+void swapValues(T & v1, T & v2)
 {
-   int temp;
-   temp = v1;
+   T temp = v1;
    v1 = v2;
    v2 = temp;
 }
@@ -28,7 +28,8 @@ void swapValues(int &v1, int &v2)
  * Description: Finds the smallest value in the array
  *   and returns its index.
  **********************************************************/
-int indexOfSmallest(const int array[], int startIndex, int size)
+ template <class T>
+int indexOfSmallest(const T array[], int startIndex, int size)
 {
    int min = array[startIndex];
    int indexOfMin = startIndex;
@@ -51,7 +52,7 @@ int indexOfSmallest(const int array[], int startIndex, int size)
  *
  * Source: Savitch, Absolute C++ 5th Edition, pp. 216-217
  ***********************************************************/
-void sort(int array[], int size)
+void sort(float array[], int size)
 {
    int indexOfNextSmallest;
 
