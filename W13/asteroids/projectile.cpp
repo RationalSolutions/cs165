@@ -9,3 +9,14 @@ void Projectile::advance()
    point.setX(point.getX() + velocity.getDx());
    point.setY(point.getY() + velocity.getDy());
 }
+
+int Projectile::hit()
+{
+   lives--;
+   if(isAlive())
+   {
+      kill();
+      return score + bonus;
+   }
+   return score;
+}

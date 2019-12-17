@@ -21,12 +21,13 @@ protected:
    int bonus;
 
 public:
-   Projectile(){}
+   Projectile() : alive(true), score(1), bonus(0), lives(1) {}
    virtual ~Projectile(){}
 
    void setVelocity(const Velocity & velocity){this->velocity = velocity;}
    void setPoint(const Point & point){this->point = point;}
    void setAlive(bool alive){this->alive = alive;}
+   void setLives(int lives){this->lives = lives;}
    void kill() {alive = false;}
 
    virtual void advance();
@@ -35,6 +36,8 @@ public:
    Velocity getVelocity(){ return velocity;}
    Point getPoint(){ return point;}
    bool isAlive(){ return alive;}
+   int getLives(){ return lives;}
+   int hit();
 };
 
 #endif //PROJECTILE_H

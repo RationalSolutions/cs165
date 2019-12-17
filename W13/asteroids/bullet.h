@@ -19,9 +19,7 @@ private:
    float angle;
 
 public:
-   Bullet(){
-      alive = true;
-   }
+
 
    void fire(Point point, float angle);
    void draw(){drawDot(point);}
